@@ -145,6 +145,7 @@ function sendFriendRequest(receiverId, event) {
             buttonElement.textContent = 'Add Friend';
             buttonElement.disabled = false;
         });
+
 }
 function AcceptRequest(id, id2, requestId) {
     $.ajax({

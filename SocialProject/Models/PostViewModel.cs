@@ -1,4 +1,4 @@
-﻿namespace SocialProject.WebUI.Models
+﻿namespace AspZustProject.WebUI.Models
 {
     public class PostViewModel
     {

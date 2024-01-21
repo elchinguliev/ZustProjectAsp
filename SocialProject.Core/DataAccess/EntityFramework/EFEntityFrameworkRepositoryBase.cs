@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SocialProject.Core.Abstraction;
+using AspZustProject.Core.Abstraction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SocialProject.Core.DataAccess.EntityFramework
+namespace AspZustProject.Core.DataAccess.EntityFramework
 {
     public class EFEntityFrameworkRepositoryBase<TEntity, TContext>
          : IEntityRepository<TEntity>

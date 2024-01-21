@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SocialProject.Core.Abstraction
+namespace AspZustProject.Core.Abstraction
 {
     public interface IEntity
     {

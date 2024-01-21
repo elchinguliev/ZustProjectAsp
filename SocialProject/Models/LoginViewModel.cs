@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace SocialProject.WebUI.Models
+namespace AspZustProject.WebUI.Models
 {
     public class LoginViewModel
     {

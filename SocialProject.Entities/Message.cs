@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SocialProject.Entities
+namespace AspZustProject.Entities
 {
     public class Message
     {

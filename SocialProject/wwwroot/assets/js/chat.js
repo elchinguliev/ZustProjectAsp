@@ -1,5 +1,5 @@
 ﻿'use strict';
-var connection = new signalR.HubConnectionBuilder().withUrl("/chathub").build();
+var connection = new signalR.HubConnectionBuilder().withUrl("/userhub").build();
 
 connection.start().then(function () {
     //GetAllUsers();
@@ -220,11 +220,11 @@ function SendMessage(senderId, receiverId) {
         });
 }
 
-connection.on("ReceiveMessage", function (senderId, message) {
-    if (senderId === sessionStorage.getItem('selectedUserId')) {
-        addMessageToChat({ senderId, content: message });
-    }
-});
+//connection.on("ReceiveMessage", function (senderId, message) {
+//    if (senderId === sessionStorage.getItem('selectedUserId')) {
+//        addMessageToChat({ senderId, content: message });
+//    }
+//});
 function handlePhotoUpload() {
     const input = document.getElementById('photo-input');
     input.value = '';

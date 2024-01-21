@@ -89,7 +89,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SocialProject.Entities\SocialProject.Entities.csproj" />
+    <ProjectReference Include="..\SocialProject.Entities\Zust.Entities.csproj" />
   </ItemGroup>
 
   <ItemGroup>

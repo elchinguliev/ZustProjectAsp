@@ -1,4 +1,4 @@
-﻿namespace SocialProject.WebUI.Helpers
+﻿namespace AspZustProject.WebUI.Helpers
 {
     public class ImageHelper
     {

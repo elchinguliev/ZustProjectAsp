@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using SocialProject.Entities;
-using SocialProject.WebUI.HUBS;
+using AspZustProject.Entities;
+using AspZustProject.WebUI.HUBS;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 var connection = builder.Configuration.GetConnectionString("myconn");
 builder.Services.AddDbContext<CustomIdentityDbContext>(options =>
 {
-    options.UseSqlServer(connection, b => b.MigrationsAssembly("SocialProject.WebUI"));
+    options.UseSqlServer(connection, b => b.MigrationsAssembly("Zust.Entities"));
 });
 
 
@@ -47,7 +47,7 @@ app.UseAuthorization();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute("Default", "{controller=Account}/{action=Register}/{id?}");
-    endpoints.MapHub<ChatHub>("/chathub");
+    endpoints.MapHub<UserHub>("/userhub");
 });
 
 app.Run();

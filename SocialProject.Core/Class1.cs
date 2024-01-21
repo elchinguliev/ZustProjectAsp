@@ -1,4 +1,4 @@
-﻿namespace SocialProject.Core
+﻿namespace AspZustProject.Core
 {
     public class Class1
     {

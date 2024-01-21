@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SocialProject.Entities;
+using AspZustProject.Entities;
 
-namespace SocialProject.WebUI.Controllers
+namespace AspZustProject.WebUI.Controllers
 {
     public class ProfileController : Controller
     {

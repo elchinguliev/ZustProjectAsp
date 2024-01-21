@@ -1,16 +1,15 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.SignalR;
-using Microsoft.EntityFrameworkCore;
-using SocialProject.Entities;
+using AspZustProject.Entities;
 
-namespace SocialProject.WebUI.HUBS
+namespace AspZustProject.WebUI.HUBS
 {
-    public class ChatHub:Hub
+    public class UserHub : Hub
     {
         private UserManager<CustomIdentityUser> _userManager;
         private CustomIdentityDbContext _context;
         private IHttpContextAccessor _contextAccessor;
-        public ChatHub(UserManager<CustomIdentityUser> userManager, IHttpContextAccessor contextAccessor, CustomIdentityDbContext context)
+        public UserHub(UserManager<CustomIdentityUser> userManager, IHttpContextAccessor contextAccessor, CustomIdentityDbContext context)
         {
             _userManager = userManager;
             _contextAccessor = contextAccessor;

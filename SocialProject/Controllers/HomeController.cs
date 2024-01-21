@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SocialProject.Entities;
-using SocialProject.WebUI.Models;
+using AspZustProject.Entities;
+using AspZustProject.WebUI.Models;
 using System.Diagnostics;
 using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
 
-namespace SocialProject.WebUI.Controllers
+namespace AspZustProject.WebUI.Controllers
 {
     public class HomeController : Controller
     {

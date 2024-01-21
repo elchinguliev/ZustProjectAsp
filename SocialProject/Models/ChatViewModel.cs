@@ -1,6 +1,6 @@
-﻿using SocialProject.Entities;
+﻿using AspZustProject.Entities;
 
-namespace SocialProject.WebUI.Models
+namespace AspZustProject.WebUI.Models
 {
     public class ChatViewModel
     {

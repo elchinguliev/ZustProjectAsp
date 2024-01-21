@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Razor.TagHelpers;
-using SocialProject.Entities;
-using SocialProject.WebUI.Helpers;
-using SocialProject.WebUI.Models;
+using AspZustProject.Entities;
+using AspZustProject.WebUI.Helpers;
+using AspZustProject.WebUI.Models;
 
-namespace SocialProject.WebUI.Controllers
+namespace AspZustProject.WebUI.Controllers
 {
     public class AccountController : Controller
     {

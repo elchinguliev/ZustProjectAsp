@@ -2,17 +2,17 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
-using SocialProject.Entities;
-using SocialProject.WebUI.HUBS;
-using SocialProject.WebUI.Models;
+using AspZustProject.Entities;
+using AspZustProject.WebUI.HUBS;
+using AspZustProject.WebUI.Models;
 
-namespace SocialProject.WebUI.Controllers
+namespace AspZustProject.WebUI.Controllers
 {
     public class MessageController : Controller
     {
         private UserManager<CustomIdentityUser> _userManager;
         private CustomIdentityDbContext _context;
-        private ChatHub _hubContext;
+        private UserHub _hubContext;
 
         public MessageController(UserManager<CustomIdentityUser> userManager, CustomIdentityDbContext context)
         {
