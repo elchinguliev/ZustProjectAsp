@@ -43,56 +43,7 @@ namespace AspZustProject.WebUI.Controllers
             return View("MyProfile");
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> Upload(List<IFormFile> files)
-        //{
-        //    var user = await _userManager.GetUserAsync(HttpContext.User);
-        //    var imageUrls = new List<Image>();
-        //    var videoUrls = new List<Video>();
-
-        //    foreach (var file in files)
-        //    {
-        //        if (file.Length > 0)
-        //        {
-        //            var fileName = Path.GetFileName(file.FileName);
-        //            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/assets/posts", fileName);
-
-        //            using (var stream = new FileStream(filePath, FileMode.Create))
-        //            {
-        //                await file.CopyToAsync(stream);
-        //            }
-
-        //            if (file.ContentType.Contains("image"))
-        //            {
-        //                imageUrls = new List<Image>
-        //                {
-        //                    new Image{Url=$"/assets/posts/{fileName}"}
-        //                };
-        //            }
-        //            else if (file.ContentType.Contains("video"))
-        //            {
-        //                imageUrls = new List<Image>
-        //                {
-        //                    new Image{Url=$"/assets/posts/{fileName}"}
-        //                };
-        //            }
-        //        }
-        //    }
-
-        //    var newPost = new Post
-        //    {
-        //        ImageUrls = imageUrls,
-        //        VideoUrls = videoUrls,
-        //        PostDate = DateTime.UtcNow
-        //        // Populate other fields as needed
-        //    };
-        //    user.Posts.Add(newPost);
-        //    _context.Posts.Add(newPost);
-        //    await _context.SaveChangesAsync();
-
-        //    return Ok(new { ImageUrls = imageUrls, VideoUrls = videoUrls });
-        //}
-
+      
 
         public async Task<IActionResult> GetPosts()
         {
@@ -101,32 +52,6 @@ namespace AspZustProject.WebUI.Controllers
         }
 
 
-
-        [HttpPost]
-        //public async Task<IActionResult> CreatePost([FromForm] PostViewModel postModel, List<IFormFile> files, List<IFormFile> videos)
-        //{
-        //    // Process text content
-        //    var content = postModel.Content;
-
-        //    // Process files
-        //    foreach (var file in files.Concat(videos))
-        //    {
-        //        if (file.Length > 0)
-        //        {
-        //            // Define the target path
-        //            var filePath = Path.Combine(_hostingEnvironment.WebRootPath, "assets", "posts", file.FileName);
-
-        //            // Save the file
-        //            using (var stream = new FileStream(filePath, FileMode.Create))
-        //            {
-        //                await file.CopyToAsync(stream);
-        //            }
-
-        //        }
-        //    }
-
-        //    return Ok(new { message = "Post created successfully!" });
-        //}
 
 
 
