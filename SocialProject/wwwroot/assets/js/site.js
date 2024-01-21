@@ -57,56 +57,56 @@ document.getElementById('video-input').addEventListener('change', function (e) {
 //    sendPostToServer(formData);
 //}
 
-function submitPost() {
-    const postContent = document.getElementById('post-content').value;
+//function submitPost() {
+//    const postContent = document.getElementById('post-content').value;
 
-    // Create an object for the post
-    const postData = {
-        content: postContent
-    };
+//    // Create an object for the post
+//    const postData = {
+//        content: postContent
+//    };
 
-    // Send the data to the server
-    fetch('/Home/CreatePost', { // Make sure this endpoint is correct
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(postData)
-    })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.json();
-        })
-        .then(post => {
-            console.log('Post added successfully:', post);
+//    // Send the data to the server
+//    fetch('/Home/CreatePost', { // Make sure this endpoint is correct
+//        method: 'POST',
+//        headers: {
+//            'Content-Type': 'application/json'
+//        },
+//        body: JSON.stringify(postData)
+//    })
+//        .then(response => {
+//            if (!response.ok) {
+//                throw new Error(`HTTP error! status: ${response.status}`);
+//            }
+//            return response.json();
+//        })
+//        .then(post => {
+//            console.log('Post added successfully:', post);
 
-            // Now update the UI to reflect the new post
-            addPostToUI(post);
-        })
-        .catch(error => {
-            console.error('Error adding post:', error);
-        });
-}
+//            // Now update the UI to reflect the new post
+//            addPostToUI(post);
+//        })
+//        .catch(error => {
+//            console.error('Error adding post:', error);
+//        });
+//}
 
 
-function addPostToUI(post) {
-    const postsContainer = document.querySelector('.news-feed');
-    const newPostElement = document.createElement('div');
-    newPostElement.className = 'news-feed-post';
+//function addPostToUI(post) {
+//    const postsContainer = document.querySelector('.news-feed');
+//    const newPostElement = document.createElement('div');
+//    newPostElement.className = 'news-feed-post';
 
-    newPostElement.innerHTML = `
-        <div class="post-content">${post.content}</div>
-        // ... other post details ...
-    `;
+//    newPostElement.innerHTML = `
+//        <div class="post-content">${post.content}</div>
+//        // ... other post details ...
+//    `;
 
-    // Add the new post to the top of the posts list
-    postsContainer.prepend(newPostElement);
+//    // Add the new post to the top of the posts list
+//    postsContainer.prepend(newPostElement);
 
-    // Clear the textarea
-    document.getElementById('post-content').value = '';
-}
+//    // Clear the textarea
+//    document.getElementById('post-content').value = '';
+//}
 
 
 
